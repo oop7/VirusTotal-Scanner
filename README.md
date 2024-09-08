@@ -10,27 +10,29 @@ VirusTotal Scanner is a GUI-based application for Windows that allows users to s
 - Save and manage VirusTotal API key securely.
 - User-friendly interface with a visually appealing layout.
 
-## 🔽 Download
-You can download the most recent version of tool [here](https://codeload.github.com/oop7/VirusTotal-Scanner/zip/refs/heads/main)
+## 💻 Installation & Usage
 
+### **Pre-built Executable (Recommended)**
 
-## 🛠️ Installation
+1. Download the latest executable from the [Releases Section](https://github.com/oop7/VirusTotal-Scanner/releases).
+2. Enter your VirusTotal API key and save it.
+3. Click "Select File" to choose a file to scan or enter a URL and click "Scan URL".
+4. View the scan results, including the detection status from various antivirus engines.
 
-1. Install the required dependencies:
-    ```sh
-    pip install -r requirements.txt
-    ```
+## Running from Source (Optional)
 
-2. Run the application:
-    ```sh
-    python virus_total_scanner.py
-    ```
+1. **Clone the repository**: ```git clone https://github.com/oop7/VirusTotal-Scanner.git```
+3. **Install required dependencies**:```pip install -r requirements.txt```
+4. **Run the tool**:```python virus_total_scanner.py```
 
-## 💻 Usage
+## Building the Executable (Optional)
 
-1. Enter your VirusTotal API key and save it.
-2. Click "Select File" to choose a file to scan or enter a URL and click "Scan URL".
-3. View the scan results, including the detection status from various antivirus engines.
+### To build the tool into an executable using PyInstaller:
+
+1. **Install PyInstaller**:```pip install pyinstaller```
+2. **Build the executable**:```pyinstaller --onefile virus_total_scanner.py```
+
+This will generate an `.exe` file in the `dist/` directory.
 
 ## 📜 License
 
